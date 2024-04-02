@@ -1,0 +1,202 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+div.welcometotheemp p.welcome {
+    text-align: center;
+    padding: 300px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+div.welcometotheemp {
+    background-image: url('https://cdn.pixabay.com/photo/2019/11/11/16/49/pottery-4618917_640.jpg');
+    background-repeat: no-repeat;
+    background-size: 1600px 700px;
+    background-position: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+div.about {
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    div.about p.about {
+        font-size: 25px;
+        text-justify: initial;
+        text-align: center;
+        font-style: oblique;
+    }
+
+    div.about p.abouttitle {
+        font-size: 40px;
+        font-family: bold;
+        text-justify: initial;
+        text-align: center
+    }
+
+img.img1 {
+    float: left;
+    padding-left: 40px;
+    padding-bottom: 200px;
+}
+
+img.img2 {
+    float: right;
+    padding-right: 40px;
+    padding-bottom: 200px;
+}
+
+div.images {
+    font-family: bold;
+    font-size: 25px;
+    text-align: center;
+    text-justify: initial;
+    padding-top: 30px;
+    padding-bottom: 300px;
+    font-style: oblique;
+}
+
+br.frbr {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+div.course {
+    font-family: bold;
+    font-size: 40px;
+    text-align: center;
+    text-justify: initial
+}
+
+div.images p.haha {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.itemsize {
+    width: 50%;
+}
+
+.month {
+    text-align: center;
+    font-family: bold;
+    font-size: 30px;
+}
+
+.week {
+    text-align: center;
+    font-family: bold;
+    font-size: 30px;
+}
+
+.solgant1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.slogant2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.button1 {
+    padding: 5px;
+    background-color: rosybrown;
+    margin-right: 100px;
+}
+
+.button2 {
+    padding: 5px;
+    background-color: rosybrown;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.button1 a {
+    text-decoration: none;
+    color: black
+}
+
+.button2 a {
+    text-decoration: none;
+    color: black
+}
+
+footer div.footer {
+    background-color: gray;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer1 {
+    text-align: center
+}
+
+.footer4 {
+    text-align: center;
+}
+
+.footer1 {
+    color: whitesmoke;
+    font-family: bold;
+}
+
+.footer4 {
+    color: whitesmoke;
+    font-family: bold;
+}
+
+.copy {
+    background-color: gray;
+    text-align: center
+}
+
+.ggg {
+    margin-right: 500px;
+    margin-left: 500px
+}
+.main {
+    text-align: center;
+    font-family: bold;
+    font-size: 40px;
+}
