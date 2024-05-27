@@ -134,21 +134,21 @@ input[type=submit]:hover {
             <p class='second'> ONE THING THAT WE MUST KNOW IN OUR LIFE IS EVERYONE IS NOT PERFECT YOU WILL CERTAINELY ASK YOURSELF WHAT DO THEY MEAN BY THAT ,SIMPLE EVERY WEBSTITE ARE NOT PERFECT MEANS THAT WE EVERYTIME NEED TO ADD SOMETHING NEW AND TO UPDATE THAT AND YOU WILL CERTAINELY ASK YOURSELF AGAIN WHAT DO THEY MEAN BY THAT, SIMPLE AGAIN YOU MUST CERTAINELY NEED MORE INFORMATION ABOUT US OR ABOUT HOW ARE WE WORKING THAT WHY WE CREATED THIS FORM JUST FOR YOU TO FILL AND ASK QUESTIONS ABOUT WHAT FURTHER INFORMATION YOU WANT TO KNOW ABOUT US</p>
         </div>
         <div class='form'>
-             <form name= "myform" action="contactsubmit.html" method="get">
+        <form asp-controller="Contact" asp-action="Contact" method="post">
     <div class="row">
       <div class="col-25">
         <label for="fname">First Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name.." required/>
+        <input type="text"  name="FirstName" placeholder="Your name.." required/>
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Last Name</label>
+        <label for="lname">Email</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required/>
+        <input type="text" name="Email" placeholder="Your Email.." required/>
       </div>
     </div>
     <div class="row">
@@ -156,17 +156,17 @@ input[type=submit]:hover {
         <label for="country">Country</label>
       </div>
       <div class="col-75">
-        <select id="country" name="country" >
-          <option value="australia">ANGOLA</option>
-          <option value="canada">ALGERIA</option>
-          <option value="usa">SOUTH AFRICA</option>
-          <option value="australia">CONGO</option>
-          <option value="canada">LIBERIA</option>
-          <option value="usa">BELGIUM</option>
-          <option value="australia">DUBAI</option>
-          <option value="canada">MADAGASCAR</option>
-          <option value="usa">MEXICO CITY</option>
-          <option value="usa">GABON</option>
+        <select  name="Country" >
+                        <option value="ANGOLA">ANGOLA</option>
+          <option value="ALGERIA">ALGERIA</option>
+          <option value="SOUTH AFRICA">SOUTH AFRICA</option>
+          <option value="CONGO">CONGO</option>
+          <option value="LIBERIA">LIBERIA</option>
+          <option value="BELGIUM">BELGIUM</option>
+          <option value="DUBAI">DUBAI</option>
+          <option value="MADAGASCAR">MADAGASCAR</option>
+          <option value="MEXICO CITY">MEXICO CITY</option>
+          <option value="usa">USA</option>
         </select> 
       </div>
     </div>
@@ -175,7 +175,7 @@ input[type=submit]:hover {
         <label for="subject">Subject</label>
       </div>
       <div class="col-75">
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required=""></textarea>
+          <textarea  name="Subject" placeholder="Write something.." style="height:200px" required=""></textarea>
       </div>
     </div>
     <div class="row">

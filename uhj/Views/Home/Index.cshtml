@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home ";
+    ViewData["Title"] = "Home";
 }
 
 <!DOCTYPE html>
@@ -46,7 +46,190 @@
         <img src="~/the-emty-wicker-basket-craftsmanship-from-thailand-the-beautiful-handcraft-free-photo.jpg" width="400" height="500" alt="" class="img2" />
         Join us on a journey of discovery and immerse yourself in the world of handmade wonders.
         <br>
+       
     </div>
+    <html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type="text/css" href="CSS/styles.css" />
+        <style>
+            #IMAGETITLE {
+                padding-left: 850px;
+                text-align: center;
+            }
+
+            .form {
+                text-align: center;
+            }
+
+            input[type=text], select, textarea {
+                width: 50%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            label {
+                padding: 12px 12px 12px 12px;
+                display: inline-block;
+            }
+
+            input[type=submit] {
+                background-color: grey;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+
+                input[type=submit]:hover {
+                    background-color: grey;
+                }
+
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: grey;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: grey;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: grey;
+                }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .form {
+                margin-left: 500px;
+                margin-right: 500px;
+                margin-bottom: 500px;
+            }
+
+            .main {
+                text-align: center;
+                font-family: bold;
+                font-size: 40px;
+            }
+
+            .second {
+                text-align: center;
+                font-family: inherit;
+                text-transform: lowercase;
+                font-size: 20px;
+                margin-left: 500px;
+                margin-right: 500px;
+                font-style: oblique
+            }
+
+            .hr {
+                margin-left: 800px;
+                margin-right: 800px
+            }
+        </style>
+    </head>
+    <body>
+    <hr class="ggg" />
+    <div>
+        <p class='main'> Insert new products </p>
+        <hr class='hr' />
+        <br>
+    </div>
+    <div class='form'>
+        <form asp-controller="Product" asp-action="Index" method="post">          
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Product Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="ProductName" placeholder="Name" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Product Price</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="ProductPrice" placeholder="Price" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Product Category</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="ProductCategory" placeholder="Category" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Product Avaibility</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="ProductAvailability" placeholder="Availability" required/>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="submit" value="ADD PRODUCT ">
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
+    <hr />
     <hr class="frbr" />
   
 </body>

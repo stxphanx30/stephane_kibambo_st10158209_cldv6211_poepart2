@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using poe.Models;
 using System.Diagnostics;
 using uhj.Models;
 
@@ -22,15 +23,67 @@ namespace uhj.Controllers
         {
             return View();
         }
+
         public IActionResult Contact()
         {
             return View();
         }
 
-        public IActionResult MyWork()
+        public IActionResult SignUp()
         {
             return View();
         }
+        public IActionResult LoginFailed()
+        {
+            return View();
+        }
+        public IActionResult OrderFailed()
+        {
+            return View();
+        }
+
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult ThankYou()
+        {
+            return View();
+        }
+
+        public IActionResult Order()
+        {
+            return View();
+        }
+
+
+        public IActionResult MyWork(int userID)
+        {
+            List<productTable> products = productTable.GetAllProducts();
+
+        
+
+
+            // Pass products and userID to the view
+            ViewData["products"] = products;
+            ViewData["userID"] = userID;
+
+            return View("MyWork");
+        }
+        public IActionResult History(int userID)
+        {
+            List<productTable> products = productTable.GetAllProducts();
+
+           
+
+            // Pass products and userID to the view
+            ViewData["products"] = products;
+            ViewData["userID"] = userID;
+
+            return View("MyWork");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
